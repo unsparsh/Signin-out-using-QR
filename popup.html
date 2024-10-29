@@ -5,20 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quick QR Login</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Load QR Code library first -->
     <script src="qrcode.min.js"></script>
-    <script src="popup.js" defer></script>
 </head>
 <body>
     <div class="container">
         <h1>Quick QR Login</h1>
         <p>Scan the QR code below to log in securely:</p>
-        <div id="qr-code"></div>
+        <div id="qrcode" class="qr-code-container"></div>
         <button id="logout">Logout from all sessions</button>
     </div>
-    <!-- <script src="popup.js"></script>
-    <script src="js/qrcode.min.js"></script> -->
-
-
-
+    <script src="popup.js"></script>
 </body>
 </html>
